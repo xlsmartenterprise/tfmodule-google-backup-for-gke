@@ -18,7 +18,7 @@ Terraform module for managing Google Kubernetes Engine (GKE) Backup and Restore 
 ### Basic Example
 ```hcl
 module "gke_backup" {
-  source = "github.com/your-org/tfmodule-google-backup-for-gke?ref=v1.0.0"
+  source = "github.com/xlsmartenterprise/tfmodule-google-backup-for-gke"
 
   backup_name              = "my-gke-backup-plan"
   restore_name             = "my-gke-restore-plan"
@@ -45,7 +45,7 @@ module "gke_backup" {
 ### Production Example with Extended Retention
 ```hcl
 module "gke_backup_production" {
-  source = "github.com/your-org/tfmodule-google-backup-for-gke?ref=v1.0.0"
+  source = "github.com/xlsmartenterprise/tfmodule-google-backup-for-gke"
 
   backup_name              = "production-backup-plan"
   restore_name             = "production-restore-plan"
@@ -72,7 +72,7 @@ module "gke_backup_production" {
 ### Multi-Namespace Backup Example
 ```hcl
 module "gke_backup_staging" {
-  source = "github.com/your-org/tfmodule-google-backup-for-gke?ref=v1.0.0"
+  source = "github.com/xlsmartenterprise/tfmodule-google-backup-for-gke"
 
   backup_name              = "staging-backup-plan"
   restore_name             = "staging-restore-plan"
@@ -99,7 +99,7 @@ module "gke_backup_staging" {
 ### Disaster Recovery Example
 ```hcl
 module "gke_backup_dr" {
-  source = "github.com/your-org/tfmodule-google-backup-for-gke?ref=v1.0.0"
+  source = "github.com/xlsmartenterprise/tfmodule-google-backup-for-gke"
 
   backup_name              = "dr-backup-plan"
   restore_name             = "dr-restore-plan"
